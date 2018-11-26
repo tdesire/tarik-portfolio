@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* body {
+  
+} */
+
+header {
+  max-width: 1000px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  /* align-items: stretch; */
+}
+
+p, .social-link, .github-link {
+  font-family: 'Quattrocento', serif;
+  letter-spacing: 0.02rem;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 50px;
+  letter-spacing: 28px;
+  margin: 10px auto;
+  font-family: 'Playfair Display', serif;
+  /* letter-spacing: 10px; */
+}
+
+.desktop-header-line {
+  margin-left: 20px;
+  width: 12%;
+  height: 38px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.job-title {
+  color: tomato;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 1.25em;
+  padding: 0.85rem;
+  font-style: italic;
+  margin-bottom: 5%;
+}
+
+/* .blinking-cursor {
+  font-weight: lighter;
+  font-size: 18px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+} */
+
+.personal-info {
+  /* display: flex; */
+  align-items: center;
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  width: 100%;
+}
+
+/* .personal-info h1 {
+  flex: 3;
+}
+
+.personal-info p, .handles {
+  flex: 1;
+} */
+
+.handles {
+  margin-bottom: 10px;
+}
+.handles-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 0 20px;
+}
+
+.social-link:hover, .github-link:hover, .fas:hover, .fab:hover {
+  color: tomato;
+  z-index: 1000;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.vid-intro {
+  margin-top: 10%;
+}
+
+.vid-intro p {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+video {
+  width: 100%;
+  padding: 40px 0;
+  flex: 1
+}
+
+.fas, .fab {
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+}
+
+.section-seperator {
+  max-width: 1000px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-top: 1px solid rgba(71, 124, 190, 0.15);
+  margin: 1em 0;
+  /* width: 89%; */
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+.about-me {
+  max-width: 1000px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.about-me h2 {
+  padding-left: 16px;
+  font-weight: normal;
+  font-family: 'Quattrocento', serif;
+  letter-spacing: 0.02rem;
+  font-size: 16px;
+  line-height: 160%;
+  order: 1;
+  flex: 0.5;
+  border-left: 1px solid rgba(71, 124, 190, 0.15);
+  height: 58px;
+}
+
+.about-me .about {
+  order: 2;
+  flex: 1;
+  padding-right: 40px;
+}
+
+.about p {
+  padding-bottom: 30px;
+}
+
+.about-me img {
+  flex: 0.5;
+  width: 25%;
+  height: 25%;
+  order: 3;
+}
+
+.projects {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.project-info {
+  flex: 1;
+  order: 2;
+}
+
+.project-info * {
+  margin-bottom: 5%;
+}
+
+.project-info h3 {
+  color: grey;
+  font-family: 'Playfair Display';
+  /* font-size: 1.2em; */
+  letter-spacing: 1px;
+}
+
+.project-links {
+  /* width: 100%; */
+  flex: 3;
+  order: 1;
+  margin-right: 10%; 
+}
+
+.live-app:hover {
+  opacity: 0.8;
+  /* text-decoration: none; */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.live-app img {
+  width: 100%;
+}
+
+/* .project-links * {
+  width: 100%;
+} */
+
+.tech-stack {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  /* border-bottom: 1px solid rgb(216,216,216); */
+  padding-top: 15px;
+  /* justify-content: space-around; */
+  margin-bottom: 2%;
+}
+
+.colored {
+  width: 100%;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.projects h2 {
+  padding-left: 16px;
+  font-weight: normal;
+  font-family: 'Quattrocento', serif;
+  letter-spacing: 0.02rem;
+  font-size: 16px;
+  line-height: 160%;
+  order: 1;
+  flex: 0.5;
+  border-left: 1px solid rgba(71, 124, 190, 0.15);
+  height: 58px;
+  margin-bottom: 60px;
+}
+
+.fa-angle-double-right {
+  color: tomato;
+}
+
+.github-link {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+footer h2, footer p {
+  text-align: center;
+}
+
+footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.fas:hover, .fab:hover {
+  color: tomato;
+  z-index: 1000;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 775px) {
+  .desktop-header-line {
+    margin-left: 0;
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  header, .about-me, .projects, .project, .project-links, .section-seperator {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .section-seperator {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  header, .about-me {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-me img {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .live-app img {
+    min-width: 60vw;
+  }
+
+  .colored {
+    padding: 6px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  header h1 {
+    text-align: center;
+    /* justify-content: flex-start; */
+    letter-spacing: 18px;
+    font-size: 40px;
+  }
+}

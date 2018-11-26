@@ -1,76 +1,253 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> dot. | Tarik Desire </title>
-  <meta name="description" content="Aspiring fullstack software engineer.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
-<body>
-  <header>
-    <h1>dot.</h1>
-    <h2>Tarik Desire</h2>
-    <p>Aspiring fullstack software engineer. Miami, FL.</p>
-  </header>
-  <main>
-    <section class="handles">
-      <h3>handles and things</h3>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Tarik Desire </title>
+    <meta name="description" content="Aspiring fullstack software engineer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Quattrocento|Roboto+Condensed|Source+Code+Pro|Roboto"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="personal-info">
+        <h1>
+          TARIK DESIRE <hr class="desktop-header-line">
+        </h1>
+        <p class="job-title">
+          software engineer
+          <!-- <span class="blinking-cursor">|</span> -->
+        </p>
+        <section class="handles">
+          <ul class="handles-list">
+            <li><a href="mailto:tprdesire@gmail.com" class="social-link">mail</a>
+            </li>
+            <li>
+              <a href="https://github.com/tdesire"  class="social-link">
+                github 
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tarik-desire-02b607149/"  class="social-link">
+                linkedin
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <hr class="section-seperator">
+      <section class="vid-intro">
+        <p>
+          What's up! I'm Tarik, and I really love cool tech (and Japanese!). So much so that I made this brief (fictitious) promo vid
+          for an app we all know well. Enjoy...
+        </p>
+        <video src="img/videos/bitmoji-ad.mp4" controls autoplay loop muted></video>
+      </section>
+    </header>
+    <hr class="section-seperator">
+    <main>
+      <section class="about-me">
+        <h2>about me</h2>
+        <img src="img/headshot.jpg" alt="headshot">
+        <section class="about">
+          <p>
+            I'm a software developer based out of Miami, passionate about learning the ins, outs, and limits of modern web/software development.
+            I avidly consume Black urban culture (yes! Hip-hop!), which at various points intersects with my more modest interests
+            in Japanese culture (as indicative of the video above).
+          </p>
+          <p>
+            Being a 90s baby of the internet generation, all of my
+            personal interests are intimately influenced, and mediated by the web.
+            I work to hone my skills as a developer to not only establish myself as an architect of this powerfully mediating force,
+            but to befriend and work alongside individuals who share a passion for creating and authoring content and software
+            that brings people across the world together in the best ways possible.
+          </p>
+        </section>
+      </section>
+      <hr class="section-seperator">
+      <section class="projects">
+        <h2>recent work</h2>
+        <section class="project">
+          <section class="project-info">
+            <h3>GoSeeThis</h3>
+            <section class="intro">
+              <p>
+                GoSeeThis is a movie-watchers app that allows users to recommend films, manage a watchlist, and follow other users.
+              </p>
+            </section>
+            <a href="https://github.com/thinkful-ei23/GoSeeThis-Client" class="github-link">
+              github
+              <i class="fa fa-angle-double-right"></i>
+            </a>
+          </section>
+          <section class="project-links">
+            <ul class="tech-stack">
+              <li>
+                <i class="devicon-javascript-plain colored"></i>
+              </li>
+              <li>
+                <i class="devicon-react-original-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-express-original-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-heroku-plain-wordmark colored"></i>
+              </li>
+            </ul>
+            <a href="https://goseethis-client.herokuapp.com/dashboard" class="live-app">
+              <img src="img/project-screenshots/GoSeeThis.png" alt="GoSeeThis Screenshots" />
+            </a>
+          </section>
+        </section>
+        <section class="project">
+          <section class="project-info">
+            <h3>genius-bot</h3>
+            <section class="intro">
+              <p>
+                Genius Bot is a responsive discord bot that uses the LyricsGenius framework to scrape song data and other artist metadata
+                from the Genius website via the Genius web API. At it's most basic level, the Bot can recite the lyrics for
+                your favorite songs. With more nuanced queries, the bot can provide various info about an artist's catalog
+                of music.
+              </p>
+            </section>
+            <a href="https://github.com/tdesire/genius-bot" class="github-link">
+              github
+              <i class="fa fa-angle-double-right"></i>
+            </a>
+          </section>
+          <section class="project-links">
+            <ul class="tech-stack">
+              <li>
+                <i class="devicon-python-plain-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-heroku-plain-wordmark colored"></i>
+              </li>
+            </ul>
+            <a href="https://discord.gg/fQYsdgw" class="live-app">
+              <img src="img/project-screenshots/Genius-Bot.png" alt="Genius-Bot Screenshots" />
+            </a>
+          </section>
+        </section>
+        <section class="project">
+          <section class="project-info">
+            <h3>itadakimasu!</h3>
+            <section class="intro">
+              <p>
+                Itadakimasu is a full-stack Japanese language application that uses the spaced repetition learning algorithm to efficiently
+                teach the user Japanese. Japanese cuisine is the entry point for this engaging app!
+              </p>
+            </section>
+            <a href="https://github.com/thinkful-ei23/itadakimasu-client" class="github-link">
+              github
+              <i class="fa fa-angle-double-right"></i>
+            </a>
+          </section>
+          <section class="project-links">
+            <ul class="tech-stack">
+              <li>
+                <i class="devicon-javascript-plain colored"></i>
+              </li>
+              <li>
+                <i class="devicon-react-original-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-express-original-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-heroku-plain-wordmark colored"></i>
+              </li>
+            </ul>
+            <a href="https://polar-dawn-64935.herokuapp.com/" class="live-app">
+              <img src="img/project-screenshots/Itadakimasu.png" alt="Itadakimasu Screenshots" />
+            </a>
+          </section>
+        </section>
+        <section class="project">
+          <section class="project-info">
+            <h3>getfit!</h3>
+            <section class="intro">
+              <p>
+                GETFIT! is a fitness routine application that allows you to create and manage a really simple, yet dynamic collection of
+                workout routines. As a user, you can create structured workouts, add and delete exercises, and define specific
+                instructions/notes for your reference.
+              </p>
+              <a href="https://github.com/thinkful-ei23/tarik-getfit-app-client" class="github-link">
+                github
+                <i class="fa fa-angle-double-right"></i>
+              </a>
+            </section>
+          </section>
+          <section class="project-links">
+            <ul class="tech-stack">
+              <li>
+                <i class="devicon-javascript-plain colored"></i>
+              </li>
+              <li>
+                <i class="devicon-react-original-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-nodejs-plain-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-express-original-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+              </li>
+              <li>
+                <i class="devicon-heroku-plain-wordmark colored"></i>
+              </li>
+            </ul>
+            <a href="https://ancient-scrubland-31758.herokuapp.com/" class="live-app">
+              <img src="img/project-screenshots/GetFit.png" alt="GETFIT screenshots" />
+            </a>
+          </section>
+        </section>
+      </section>
+    </main>
+    <hr class="section-seperator">
+    <footer>
+      <h2>reach out</h2>
       <ul class="handles-list">
         <li>
-          <a href="mailto:tprdesire@gmail.com">email me:</a>
+          <a href="mailto:tprdesire@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
         </li>
         <li>
-          <a href="https://github.com/tdesire">github</a>
+          <a href="https://github.com/tdesire">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/tarik-desire-02b607149/">linkedin</a>
+          <a href="https://www.linkedin.com/in/tarik-desire-02b607149/">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </li>
       </ul>
-    </section>
-    <section class="about-me">
-      <h3>about me</h3>
-      <p>
-        What's up! I'm Tarik, an aspiring software developer based out of Miami, interested in learning
-        the ins, outs, and limits of modern web/software development. I'm a recent graduate of Hamilton College
-        where I majored in Africana Studies and minored in Japanese language. As indicative of my studies, 
-        I avidly consume Black urban culture (yes! Hip-hop!), which at various points intersects with my more modest interests
-        in Japanese culture. These range from Japanese manga (the likes of Takehiko Inoue's <span>Vagabond</span>)
-        to modern Japanese minimalism and urban youth culture. Being a 90s baby of the internet generation, all of my personal interests
-        are intimately influenced, and mediated by the web. I work to hone my skills as a developer to not only bring myself among those
-        who architect this powerfully mediating force, but to befriend and work alongside individuals who share a passion for creating and 
-        authoring content and software that brings people across the world together in the best ways possible.
-      </p>
-    </section>
-    <section class="projects">
-      <h3>projects</h3>
-      <section class="project">
-        <h4>getfit!</h4>
-        <p>
-            GETFIT! is a fitness routine application that allows you to create and manage a really simple, yet dynamic collection of workout 
-            routines. As a user, you can create structured workouts, add and delete exercises, and define specific instructions/notes for your 
-            reference.
-        </p>
-        <ul>Tech Stack
-          <li>Frontend: React-Redux</li>
-          <li>Backend: Node/Express</li>
-          <li>Database layer: MongoDB</li>
-          <li>Auth layer: JWT/Passwort</li>
-        </ul>
-        <img src="img/project-screenshots/getfit-app-screenshot.png" alt="GETFIT screenshot" />
-        <ul>
-          <li>
-            <a href="https://github.com/thinkful-ei23/tarik-getfit-app-client">github repo</a>
-          </li>
-          <li>
-            <a href="https://ancient-scrubland-31758.herokuapp.com/">live app</a>
-          </li>
-        </ul>
-      </section>
-    </section>
-  </main>
-</body>
+      <p class="footer-rights">© tarik desire 2018</p>
+    </footer>
+  </body>
 </html>
