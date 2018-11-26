@@ -160,11 +160,18 @@ header h1 {
   text-align: center;
   width: 60%;
 }
-video {
+
+iframe {
   width: 100%;
   padding: 40px 0;
   flex: 1
 }
+
+/* video {
+  width: 100%;
+  padding: 40px 0;
+  flex: 1
+} */
 
 .fas, .fab {
   font-size: 30px;
