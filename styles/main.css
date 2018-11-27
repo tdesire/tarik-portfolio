@@ -159,12 +159,22 @@ header h1 {
   margin: 0 auto;
   text-align: center;
   width: 60%;
+  margin-bottom: 20px;
+}
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
 }
 
 iframe {
-  width: 100%;
-  padding: 40px 0;
-  flex: 1
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 /* video {
@@ -377,9 +387,21 @@ footer h2 {
     justify-content: center;
   }
 
+  .about-me h2, .about-me img {
+    margin-bottom: 20px;
+  }
+
   .about-me img {
     order: 2;
-    max-width: 100%;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .about-me p {
+    margin-left: 30px;
+    text-align: center;
   }
 
   .live-app img {
